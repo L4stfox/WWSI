@@ -1,0 +1,47 @@
+body {
+    background: grey;
+}
+
+#Menu {
+    border: solid 2px red;
+    background: white;
+    width: 100%;
+}
+
+.Menu_Przycisk {
+    text-decoration: none;
+    display: inline-block;
+    border: solid 1px;
+    text-align: center;
+    padding: 10px;
+    margin-left:25px;
+    width: 22%;
+}
+
+
+a:link {
+}
+
+a:visited {
+}
+
+a:hover {
+    background: black;
+    color: yellow;
+}
+
+.form-group {
+    background: white;
+    color: red;
+}
+
+.col-md-10 {
+    background: lightgrey;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+li{
+    text-decoration:none;
+}

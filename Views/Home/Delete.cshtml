@@ -1,0 +1,65 @@
+﻿@model Zaginieni.Models.Info
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Czy na pewno chcesz usunąć zaginionego?</h3>
+<div>
+    <h4>Info</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Imie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Imie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nazwisko)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nazwisko)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Płeć)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Płeć)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Informacja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Informacja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Portret)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Portret)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Usuń" class="btn btn-default" /> |
+            @Html.ActionLink("Wróć do listy", "ListaZaginionych")
+        </div>
+    }
+</div>

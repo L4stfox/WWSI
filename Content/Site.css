@@ -1,0 +1,17 @@
+﻿/*#Lista {
+    color: black;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 150px) 300px;
+    grid-template-rows: 150px;
+    justify-content: center;
+    text-align: center;
+    grid-row-gap: 10px;
+}
+
+.Lista_Element {
+    position: relative;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}*/

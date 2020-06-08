@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Zaginieni.Models.Info>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach (var item in Model)
+{
+    <div class="Lista_Zaginionych">
+        <div id="portret" class="Lista_Element">
+            <img src="@item.Portret" alt="Zdjęcie osoby zaginionej" width="150" height="150" />
+        </div>
+        <div class="Lista_Element">
+            @Html.DisplayFor(modelItem => item.Imie)
+
+            @Html.DisplayFor(modelItem => item.Nazwisko)           
+        </div>
+        <div class="Lista_Element">
+            @Html.DisplayFor(modelItem => item.Płeć)
+        </div>
+            <div class="Lista_Element">
+                @Html.DisplayFor(modelItem => item.Informacja)
+            </div>
+
+            <div id="edit">
+                <input type="button" id="edytuj" value="" onclick="location.href='@Url.Action("Edit", new { id = item.Id})'" />
+            </div>
+            <div id="delete">
+                <input type="button" id="usun" value="" onclick="location.href='@Url.Action("Delete", new { id = item.Id})'" />
+            </div>
+        </div>
+        }
